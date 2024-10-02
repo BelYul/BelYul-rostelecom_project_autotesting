@@ -1,24 +1,22 @@
-# Information class (Информационный класс с данными)
+# Информационный класс с тестовыми данными и URL
 class Info():
+    login_lc = "rtkid_1727460978242"
+    invalid_login_lc = "rtkid_0000000000000" #незарегистрированный
+    phone_lc = "+79041660090"
+    mail_lc = "secita7890@aiworldx.com"
+    invalid_mail_lc = "secita7890@aiworldx.ru" #незарегистрированная
+
+    valid_password1 = "Test1234@"
+
+    invalid_password2 = "TesT1234@" #незарегистрированный
+
     URL_ELK_Web = 'https://lk.rt.ru/'
-    URL_Onlaim_Web = 'https://my.rt.ru/'
+    URL_Onlaim_Web = 'https://my.rt.ru/' #пока исключен из тестов,т.к. необходим лицевой счет в г. Москва (требуются др.тестовые данные)
     URL_START_Web = 'https://start.rt.ru/'
     URL_SmartHome_Web = 'https://lk.smarthome.rt.ru/'
-    URL_Key_Web = 'https://key.rt.ru/'
+    URL_Key_Web = 'https://key.rt.ru/' #не включен в тесты
 
-    reg_text = "Продолжить"
-
-    login_lc = "rtkid_1681360401344"
-    invalid_login_lc = "rtkid_1681360401345"
-    phone_lc = "+79856831770"
-    mail_lc = "nsm@mailto.plus"
-
-    # 1й валидный пароль
-    valid_password1 = "2WSXzaqQ"
-
-    # 2й не валидный пароль(валидный по требованиям)
-    invalid_password2 = "2WSXzaqQrt"
-
+    reg_text = "Зарегистрироваться"
     tab_phone_text = "Номер"
     tab_mail_text = "Почта"
     tab_login_text = "Логин"
